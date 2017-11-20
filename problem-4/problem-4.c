@@ -27,7 +27,7 @@ int main()
     for (int i = 102; i < 1000; i++) {
         for (int j = 102; j < 1000; j++) {
             buf = i*j;
-            if (is_palindrome(buf)) {
+            if (is_palindrome(buf) && largest_palindrome < buf) {
                 a = i;
                 b = j;
                 largest_palindrome = buf;
