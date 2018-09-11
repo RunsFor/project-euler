@@ -1,6 +1,50 @@
 # project-euler
 Tasks from projecteuler.net website
 
+## Disclaimer
+
+All solutions are encrypted:
+
+It was encrypted using openssl command. Here is an example for problem #11:
+
+```
+openssl aes-256-cbc -e -a -in problem-11.lua -out problem-11.lua.enc
+```
+
+To decrypt it you have to solve it first and then use the answer as a password:
+
+```
+openssl enc -aes-256-cbc -d -a -in problem-11.lua.enc
+```
+
+## Usage
+
+### .c files
+
+Compile and run:
+
+```
+cd 0001-problem && clang problem-1.c && ./a.out
+```
+
+### .lua files
+
+Just run it as an executable:
+
+```
+0011-problem/problem-11.lua
+```
+
+#### Installing lua
+
+Mac OS:
+
+```
+brew install lua
+# or
+brew install tarantool
+```
+
 ## Important topics
 
 ### Problem 3
